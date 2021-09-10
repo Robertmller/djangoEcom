@@ -1,13 +1,13 @@
-from .views import index, 
+from .views import index, Shop, Contact, Blog, About, Account
 from django.urls import path, include
 from djangoEcomApp import views
 
 
 urlpatterns = [
-    path('index.html', index, name='Home'),
-    path('shop.html', shop, name='Loja'),
-    path('contact.html', contact, name='Contato'),
-    path('blog.html', blog, name='Blog'),
-    path('about.html', about, name='Sobre'),
-    path('account.html', account, name='Conta'),
+    path('', index, name='Home'),
+    path('shop', Shop, name='Loja'),
+    path('contact', Contact, name='Contato'),
+    path('blog', Blog, name='Blog'),
+    path('about', About, name='Sobre'),
+    path('account', Account, name='Conta'),
 ]
